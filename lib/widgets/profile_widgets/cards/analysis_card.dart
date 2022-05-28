@@ -38,9 +38,13 @@ class _AnalysisCardState extends State<AnalysisCard> {
                 const SizedBox(
                   width: 50,
                 ),
-                Stats(name: 'acousticness', value: widget.featuresData['acousticness']),
+                Stats(
+                    name: 'acousticness',
+                    value: widget.featuresData['acousticness']),
                 const SizedBox(width: 100),
-                Stats(name: 'danceability', value: widget.featuresData['danceability']),
+                Stats(
+                    name: 'danceability',
+                    value: widget.featuresData['danceability']),
                 const SizedBox(width: 100),
                 Stats(name: 'energy', value: widget.featuresData['energy']),
               ],
@@ -50,10 +54,13 @@ class _AnalysisCardState extends State<AnalysisCard> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 const SizedBox(width: 50),
-                Stats(name: 'instrumentalness',
+                Stats(
+                    name: 'instrumentalness',
                     value: widget.featuresData['instrumentalness']),
                 const SizedBox(width: 187),
-                Stats(name: 'speechiness', value: widget.featuresData['speechiness']),
+                Stats(
+                    name: 'speechiness',
+                    value: widget.featuresData['speechiness']),
                 const SizedBox(width: 150),
                 Stats(name: 'valence', value: widget.featuresData['valence']),
               ],
@@ -105,7 +112,8 @@ class _StatsState extends State<Stats> {
         Text(widget.name,
             style: const TextStyle(
                 fontWeight: FontWeight.w500,
-                fontSize: 20, color: Color.fromARGB(255, 255, 255, 255)),
+                fontSize: 20,
+                color: Color.fromARGB(255, 255, 255, 255)),
             textDirection: TextDirection.ltr),
         const SizedBox(height: 15),
         // percentage indicator
@@ -123,7 +131,8 @@ class _StatsState extends State<Stats> {
         Text(getDesc(widget.name),
             style: const TextStyle(
                 fontStyle: FontStyle.normal,
-                fontSize: 18, color: Color.fromARGB(255, 189, 189, 189)),
+                fontSize: 18,
+                color: Color.fromARGB(255, 189, 189, 189)),
             textDirection: TextDirection.ltr),
       ],
     );

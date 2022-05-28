@@ -25,13 +25,16 @@ class _SongHeaderState extends State<SongHeader> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(widget.song['name'], style: const TextStyle(fontSize: 48, color: Colors.white, fontWeight: FontWeight.w900)),
+              Text(widget.song['name'],
+                  style: const TextStyle(
+                      fontSize: 48,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900)),
               const SizedBox(height: 6.0),
               Text(
                 widget.song['artist'],
-                style: const TextStyle(fontSize: 32,
-                  color: Color.fromARGB(255, 189, 189, 189
-                ) ),
+                style: const TextStyle(
+                    fontSize: 32, color: Color.fromARGB(255, 189, 189, 189)),
               ),
             ],
           ),

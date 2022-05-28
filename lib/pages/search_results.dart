@@ -61,7 +61,8 @@ class _SearchResultsState extends State<SearchResults> {
                 ),
               ),
               const SizedBox(height: 10),
-              const Text('Click on a song to generate recommendations based on it',
+              const Text(
+                  'Click on a song to generate recommendations based on it',
                   style: TextStyle(
                       fontSize: 20, color: Color.fromARGB(255, 189, 189, 189))),
               const SizedBox(height: 20),

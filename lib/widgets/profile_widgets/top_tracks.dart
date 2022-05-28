@@ -31,7 +31,8 @@ class _TopTracksState extends State<TopTracks> {
               style: const TextStyle(color: Colors.white, fontSize: 20)),
           const SizedBox(width: 12),
           Text(widget.topTracksData[index][1],
-            style: const TextStyle(color: Color.fromARGB(255, 171, 171, 171), fontSize: 18)),
+              style: const TextStyle(
+                  color: Color.fromARGB(255, 171, 171, 171), fontSize: 18)),
         ]);
       },
     );

@@ -10,7 +10,8 @@ AppTheme currentTheme = AppTheme();
 
 class ByReleaseDateCard extends StatefulWidget {
   final releaseDateExtremes;
-  const ByReleaseDateCard({Key? key, required this.releaseDateExtremes}) : super(key: key);
+  const ByReleaseDateCard({Key? key, required this.releaseDateExtremes})
+      : super(key: key);
 
   @override
   State<ByReleaseDateCard> createState() => _ByReleaseDateCardState();
@@ -30,7 +31,7 @@ class _ByReleaseDateCardState extends State<ByReleaseDateCard> {
         height: 350,
         padding: const EdgeInsets.all(30),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start, 
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 10),
@@ -42,25 +43,25 @@ class _ByReleaseDateCardState extends State<ByReleaseDateCard> {
             const SizedBox(height: 15),
             CustomListTile(
               coverImage: widget.releaseDateExtremes[0]['coverImage'],
-              trackName: 
-                truncateString(widget.releaseDateExtremes[0]['name'], 17),
-              artistName: 
-                truncateString(widget.releaseDateExtremes[0]['artist'], 17),
+              trackName:
+                  truncateString(widget.releaseDateExtremes[0]['name'], 17),
+              artistName:
+                  truncateString(widget.releaseDateExtremes[0]['artist'], 17),
             ),
             const SizedBox(height: 30),
             const Text('Earliest Track',
-              style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.white)),
+                style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white)),
             const SizedBox(height: 15),
             CustomListTile(
               coverImage: widget.releaseDateExtremes[1]['coverImage'],
-              trackName: 
-                truncateString(widget.releaseDateExtremes[1]['name'], 17),
-              artistName: 
-                truncateString(widget.releaseDateExtremes[1]['artist'], 17),
-            ), 
+              trackName:
+                  truncateString(widget.releaseDateExtremes[1]['name'], 17),
+              artistName:
+                  truncateString(widget.releaseDateExtremes[1]['artist'], 17),
+            ),
           ],
         ),
       ),

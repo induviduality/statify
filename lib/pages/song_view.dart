@@ -108,7 +108,8 @@ class _SongViewState extends State<SongView> {
                               backgroundColor:
                                   const Color.fromARGB(255, 20, 23, 28),
                               title: const Text('Playlist creation failed'),
-                              content: const Text('API could not find songs like this one.'),
+                              content: const Text(
+                                  'API could not find songs like this one.'),
                               actions: <Widget>[
                                 TextButton(
                                   onPressed: () => Navigator.pop(context, 'OK'),

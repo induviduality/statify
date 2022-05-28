@@ -29,8 +29,8 @@ class _RecommendedTracksState extends State<RecommendedTracks> {
             itemCount: widget.recommendedTracks.length,
             itemBuilder: (context, index) {
               return ListTile(
-                leading:
-                    Image.network(widget.recommendedTracks[index]['coverImage']),
+                leading: Image.network(
+                    widget.recommendedTracks[index]['coverImage']),
                 title: Text(widget.recommendedTracks[index]['name'],
                     style: const TextStyle(
                         fontSize: 18,

@@ -42,10 +42,10 @@ class _ByPopularityCardState extends State<ByPopularityCard> {
             const SizedBox(height: 15),
             CustomListTile(
               coverImage: widget.popularityExtremes[0]['coverImage'],
-              trackName: 
-                truncateString(widget.popularityExtremes[0]['name'], 17),
-              artistName: 
-                truncateString(widget.popularityExtremes[0]['artist'], 17),
+              trackName:
+                  truncateString(widget.popularityExtremes[0]['name'], 17),
+              artistName:
+                  truncateString(widget.popularityExtremes[0]['artist'], 17),
             ),
             const SizedBox(height: 30),
             const Text('Most Obscure',
@@ -56,10 +56,10 @@ class _ByPopularityCardState extends State<ByPopularityCard> {
             const SizedBox(height: 15),
             CustomListTile(
               coverImage: widget.popularityExtremes[1]['coverImage'],
-              trackName: 
-                truncateString(widget.popularityExtremes[1]['name'], 17),
-              artistName: 
-                truncateString(widget.popularityExtremes[1]['artist'], 17),
+              trackName:
+                  truncateString(widget.popularityExtremes[1]['name'], 17),
+              artistName:
+                  truncateString(widget.popularityExtremes[1]['artist'], 17),
             ),
           ],
         ),

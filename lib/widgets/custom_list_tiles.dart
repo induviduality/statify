@@ -6,13 +6,13 @@ class CustomListTile extends StatefulWidget {
   final coverImage;
   final trackName;
   final artistName;
-  
-  const CustomListTile({
-    Key? key,
-    required this.coverImage,
-    required this.trackName,
-    required this.artistName
-  }) : super(key: key);
+
+  const CustomListTile(
+      {Key? key,
+      required this.coverImage,
+      required this.trackName,
+      required this.artistName})
+      : super(key: key);
 
   @override
   State<CustomListTile> createState() => _CustomListTileState();
@@ -34,12 +34,12 @@ class _CustomListTileState extends State<CustomListTile> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(widget.trackName,
-                  style: const TextStyle(fontSize: 20)),
+              Text(widget.trackName, style: const TextStyle(fontSize: 20)),
               const SizedBox(height: 8.0),
               Text(
                 widget.artistName,
-                style: const TextStyle(fontSize: 16, color: Color.fromARGB(255, 189, 189, 189)),
+                style: const TextStyle(
+                    fontSize: 16, color: Color.fromARGB(255, 189, 189, 189)),
               ),
             ],
           ),

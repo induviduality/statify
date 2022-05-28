@@ -82,7 +82,7 @@ class _AuthIntermediatoryState extends State<AuthIntermediatory> {
                         await getListeningAnalysis(accessToken, recentlyPlayed);
                     var topTracks = await getTopX(accessToken, 'tracks', 10);
                     topTracks = getTracksNameArtistsIDs(topTracks);
-                    
+
                     var popularityExtremes =
                         await getMostAndLeastPopularTracks(accessToken);
                     var durationExtremes =
@@ -100,9 +100,7 @@ class _AuthIntermediatoryState extends State<AuthIntermediatory> {
                             accessToken: accessToken,
                             popularityExtremes: popularityExtremes,
                             durationExtremes: durationExtremes,
-                            releaseDateExtremes: releaseDateExtremes
-                          )
-                        );
+                            releaseDateExtremes: releaseDateExtremes));
                   },
                 ),
               ],

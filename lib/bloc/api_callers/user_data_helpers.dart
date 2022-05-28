@@ -91,13 +91,14 @@ Future getTopXNames(accessToken, type,
   // X can be 'artists' or 'tracks'
   // Hence, if type is 'artists', get the top 20 artists
   // If type is 'tracks', get the top 20 tracks
-  // Returns a list of strings containing the names of the top X 
+  // Returns a list of strings containing the names of the top X
 
   var items = await getTopX(accessToken, type, number, timeRange);
   return items.map((item) => item['name']).toList();
 }
 
-Future getTopX(accessToken, type, [number = 20, timeRange = 'medium_term']) async {
+Future getTopX(accessToken, type,
+    [number = 20, timeRange = 'medium_term']) async {
   // Gets the user's top 'number' number of artists or tracks.
   // The 'type' parameter should be either 'artists' or 'tracks'.
 
@@ -230,6 +231,7 @@ Future getSavedTracks(accessToken) async {
       .map((item) => item['track']['id'])
       .toList();
 }
+
 Future getTrackData(accessToken, trackID) async {
   // Gets the track data for a given track ID.
   // Returns a map of track data containing
@@ -250,7 +252,7 @@ Future getTrackData(accessToken, trackID) async {
 }
 
 Future getMostAndLeastPopularTracks(accessToken) async {
-  // Gets the most popular song and the least popular song from 
+  // Gets the most popular song and the least popular song from
   // the user's Liked Songs on Spotify.
 
   // Get the popularity of Liked Songs
@@ -270,7 +272,7 @@ Future getMostAndLeastPopularTracks(accessToken) async {
 }
 
 Future getLongestAndShortest(accessToken) async {
-  // Gets the longest song and the shortest song by duration from 
+  // Gets the longest song and the shortest song by duration from
   // the user's Liked Songs on Spotify.
 
   // Get the durations of Liked Songs
@@ -291,9 +293,8 @@ Future getLongestAndShortest(accessToken) async {
   return [longest, shortest];
 }
 
-
 Future getEarliestAndLatest(accessToken) async {
-  // Gets the most popular song and the least popular song from 
+  // Gets the most popular song and the least popular song from
   // the user's Liked Songs on Spotify.
   var likedTracks = await getSavedTracks(accessToken);
   var releaseDateMap = await getReleaseDates(accessToken, likedTracks);
@@ -376,4 +377,3 @@ Future saveTracksAsPlaylist(accessToken, tracks) async {
 
   return (populateResponse.statusCode == 201);
 }
-
