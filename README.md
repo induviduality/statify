@@ -4,11 +4,7 @@ Built with Flutter and Spotify Web API. :blue_heart::green_heart:
 
 #### Check out the live app at: https://stat-ify.web.app
 
-Statify caters to exactly that. Statify allows users to look at their Spotify profiles at a deeper level than Wrapped at any time they wish. It comes with more visualizations of their streaming habits which your usual Wrapped doesn't show you.
-
-This part adds a fun element to Statify. It uses sorting algorithms to process the streaming data of the user to provide the statistics.
-
-## Running Statify locally
+## :rocket: Running Statify locally
 
 ### Setting up the Spotify Web API
 
@@ -47,7 +43,7 @@ Choose an available web browser to run on. Chrome is often fastest to run.
 > 
 > This is done by making the page at `redirect_uri` to redirect to the localhost app manually. The port number must be known by the page for it to redirect. Specifying a specific port stops the randomization of these port numbers, allowing the page to redirect correctly.
 
-## Features
+## :dart: Features
 - Spotify Authentication
 - User Listening Style Analysis based on the features of the songs they listen to
 - View User's Top Tracks
@@ -58,7 +54,7 @@ Choose an available web browser to run on. Chrome is often fastest to run.
 - Save Recommendations directly to a new Playlist
 - Clean and simple UI/UX
 
-## Toolchain
+## 🛠️ Toolchain
 - Flutter
 - Spotify Web API
 - Material UI
@@ -69,7 +65,7 @@ Choose an available web browser to run on. Chrome is often fastest to run.
 ### Hosting
 The Web app is hosted on Firebase. Check out the [official documentation on Firebase Hosting](https://firebase.google.com/docs/hosting/quickstart) to host the project.
 
-## Why Statify? // Inspiration
+## :star: Why Statify? // Inspiration
 
 ### Music Discovery
 I'm sure there's been at least one time where you were vibing to one of your favourite songs wondered if you'll ever be able to find a song as great as that one. Enter Statify. Statify's music discovery feature allows users to discover songs similar to the song they provide as input. What's more? Users can save the recommendations as a playlist as well!
@@ -79,7 +75,11 @@ The Music Discovery part of the app contains two parts: searching for a song to 
 ### Profile Visualizations
 Everyone loves Spotify Wrapped. We love to look back at our music and reflect upon it. Spotify Wrapped is simply a fun and feel-good experience for the users to flaunt their streaming habits. But the downside? Wrapped comes out only once a year, leaving us wanting more. 
 
-## Challenges Faced and Learnings
+Statify caters to exactly that. Statify allows users to look at their Spotify profiles at a deeper level than Wrapped at any time they wish. It comes with more visualizations of their streaming habits which your usual Wrapped doesn't show you.
+
+This part adds a fun element to Statify. It uses sorting algorithms to process the streaming data of the user to provide the statistics.
+
+## :memo: Challenges Faced and Learnings
 - Being very new to Flutter, it felt daunting to comprehend how Flutter and its widget structure works. Working on this project helped me accelerate my learning curve by a mile.
 - It was a great exercise to deal with an ambiguous problem statement and come up with ideas - gave a feel of what to expect in the industry
 - Learnt a great deal about algorithms - classification and recommendation algorithms in particular. Found myself down a reading spiral as I read up about the math and algorithms during my research about the project.
@@ -91,12 +91,12 @@ Everyone loves Spotify Wrapped. We love to look back at our music and reflect up
 >  - The first page is the page at the `redirect_uri` registered with the Spotify API. It contains a link which the user is prompted to click. On clicking, it redirects to a page within the app along with the callback response as arguments.
 >  - The second page retrieves the arguments from its URL and passes it on to the upcoming pages for usage. This page resides within the app itself.
 
-## What's next for Statify?
+## :construction: What's next for Statify?
 
  - [ ] Add sharing profile as images for external sharing
  - [ ] Make Website more responsive
  - [ ] Add more timeframes to filter for Top Tracks & Artists
 
-##  Feature Requests & Bug Reporting
+## Feature Requests & Bug Reporting
 
 Feel free to  [open an issue](https://github.com/induviduality/statify/issues)  on GitHub if you encounter any bugs, or would like to see any additional features that can enhance this project!
