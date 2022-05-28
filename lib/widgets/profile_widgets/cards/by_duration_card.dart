@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:statify/themes/maintheme.dart';
 import 'package:statify/widgets/custom_list_tiles.dart';
+import 'package:statify/bloc/string_helpers.dart';
 
 AppTheme currentTheme = AppTheme();
 
@@ -24,7 +25,7 @@ class _ByDurationCardState extends State<ByDurationCard> {
         borderRadius: BorderRadius.circular(50),
       ),
       child: Container(
-        width: 400,
+        width: 380,
         height: 350,
         padding: const EdgeInsets.all(30),
         child: Column(
@@ -40,8 +41,10 @@ class _ByDurationCardState extends State<ByDurationCard> {
             const SizedBox(height: 15),
             CustomListTile(
               coverImage: widget.durationExtremes[0]['coverImage'],
-              trackName: widget.durationExtremes[0]['name'],
-              artistName: widget.durationExtremes[0]['artist'],
+              trackName: 
+                truncateString(widget.durationExtremes[0]['name'], 17),
+              artistName: 
+                truncateString(widget.durationExtremes[0]['artist'], 17),
             ),
             const SizedBox(height: 30),
             const Text('Shortest Song',
@@ -52,8 +55,10 @@ class _ByDurationCardState extends State<ByDurationCard> {
             const SizedBox(height: 15),
             CustomListTile(
               coverImage: widget.durationExtremes[1]['coverImage'],
-              trackName: widget.durationExtremes[1]['name'],
-              artistName: widget.durationExtremes[1]['artist'],
+              trackName: 
+                truncateString(widget.durationExtremes[1]['name'], 17),
+              artistName: 
+                truncateString(widget.durationExtremes[1]['artist'], 17),
             ), 
           ],
         ),

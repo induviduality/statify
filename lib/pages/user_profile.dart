@@ -132,7 +132,7 @@ class _UserProfileState extends State<UserProfile> {
                               popularityExtremes: widget.popularityExtremes),
                         ],
                       ),
-                      const SizedBox(width: 85),
+                      const SizedBox(width: 45),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -142,7 +142,7 @@ class _UserProfileState extends State<UserProfile> {
                               durationExtremes: widget.durationExtremes),
                         ],
                       ),
-                      const SizedBox(width: 85),
+                      const SizedBox(width: 45),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [

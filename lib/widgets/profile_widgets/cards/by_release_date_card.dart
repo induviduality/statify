@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
+import 'package:statify/bloc/string_helpers.dart';
 
 import 'package:statify/themes/maintheme.dart';
 import 'package:statify/widgets/custom_list_tiles.dart';
@@ -25,7 +26,7 @@ class _ByReleaseDateCardState extends State<ByReleaseDateCard> {
         borderRadius: BorderRadius.circular(50),
       ),
       child: Container(
-        width: 400,
+        width: 380,
         height: 350,
         padding: const EdgeInsets.all(30),
         child: Column(
@@ -41,8 +42,10 @@ class _ByReleaseDateCardState extends State<ByReleaseDateCard> {
             const SizedBox(height: 15),
             CustomListTile(
               coverImage: widget.releaseDateExtremes[0]['coverImage'],
-              trackName: widget.releaseDateExtremes[0]['name'],
-              artistName: widget.releaseDateExtremes[0]['artist'],
+              trackName: 
+                truncateString(widget.releaseDateExtremes[0]['name'], 17),
+              artistName: 
+                truncateString(widget.releaseDateExtremes[0]['artist'], 17),
             ),
             const SizedBox(height: 30),
             const Text('Earliest Track',
@@ -53,8 +56,10 @@ class _ByReleaseDateCardState extends State<ByReleaseDateCard> {
             const SizedBox(height: 15),
             CustomListTile(
               coverImage: widget.releaseDateExtremes[1]['coverImage'],
-              trackName: widget.releaseDateExtremes[1]['name'],
-              artistName: widget.releaseDateExtremes[1]['artist'],
+              trackName: 
+                truncateString(widget.releaseDateExtremes[1]['name'], 17),
+              artistName: 
+                truncateString(widget.releaseDateExtremes[1]['artist'], 17),
             ), 
           ],
         ),

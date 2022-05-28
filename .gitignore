@@ -35,6 +35,9 @@ migrate_working_dir/
 .pub/
 /build/
 
+# Firebase Folder
+.firebase/
+
 # Web related
 lib/generated_plugin_registrant.dart
 
