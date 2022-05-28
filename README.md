@@ -4,16 +4,6 @@ Built with Flutter and Spotify Web API. :blue_heart::green_heart:
 
 #### Check out the live app at: https://stat-ify.web.app
 
-## Why Statify? // Inspiration
-
-### Music Discovery
-I'm sure there's been at least one time where you were vibing to one of your favourite songs wondered if you'll ever be able to find a song as great as that one. Enter Statify. Statify's music discovery feature allows users to discover songs similar to the song they provide as input. What's more? Users can save the recommendations as a playlist as well!
-
-The Music Discovery part of the app contains two parts: searching for a song to seed as input, and fetching recommendations. These will be used to illustrate the significance of searching and sorting algorithms, as required by the Problem Statement.
-
-### Profile Visualizations
-Everyone loves Spotify Wrapped. We love to look back at our music and reflect upon it. Spotify Wrapped is simply a fun and feel-good experience for the users to flaunt their streaming habits. But the downside? Wrapped comes out only once a year, leaving us wanting more. 
-
 Statify caters to exactly that. Statify allows users to look at their Spotify profiles at a deeper level than Wrapped at any time they wish. It comes with more visualizations of their streaming habits which your usual Wrapped doesn't show you.
 
 This part adds a fun element to Statify. It uses sorting algorithms to process the streaming data of the user to provide the statistics.
@@ -78,6 +68,16 @@ Choose an available web browser to run on. Chrome is often fastest to run.
 
 ### Hosting
 The Web app is hosted on Firebase. Check out the [official documentation on Firebase Hosting](https://firebase.google.com/docs/hosting/quickstart) to host the project.
+
+## Why Statify? // Inspiration
+
+### Music Discovery
+I'm sure there's been at least one time where you were vibing to one of your favourite songs wondered if you'll ever be able to find a song as great as that one. Enter Statify. Statify's music discovery feature allows users to discover songs similar to the song they provide as input. What's more? Users can save the recommendations as a playlist as well!
+
+The Music Discovery part of the app contains two parts: searching for a song to seed as input, and fetching recommendations. These will be used to illustrate the significance of searching and sorting algorithms, as required by the Problem Statement.
+
+### Profile Visualizations
+Everyone loves Spotify Wrapped. We love to look back at our music and reflect upon it. Spotify Wrapped is simply a fun and feel-good experience for the users to flaunt their streaming habits. But the downside? Wrapped comes out only once a year, leaving us wanting more. 
 
 ## Challenges Faced and Learnings
 - Being very new to Flutter, it felt daunting to comprehend how Flutter and its widget structure works. Working on this project helped me accelerate my learning curve by a mile.
