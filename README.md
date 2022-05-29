@@ -59,6 +59,7 @@ Choose an available web browser to run on. Chrome is often fastest to run.
 - View User's Top Artists
 - View Track Stats by popularity, duration, release date
 - Search for Songs
+  - Responsive navigation with keyboard as well as mouse for input
 - Generate Song Recommendations based on a song
 - Save Recommendations directly to a new Playlist
 - Clean and simple UI/UX
