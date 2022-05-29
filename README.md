@@ -3,48 +3,14 @@ A Music Discovery and Spotify Profile Visualizer web app.
 Built with Flutter and Spotify Web API. :blue_heart::green_heart:
 
 #### Check out the live app at: https://stat-ify.web.app
+(Login credentials attached in project submission for evaluators to try it out)
 
-### Table of Contents
-- [Running Statify Locally](https://github.com/induviduality/statify/blob/main/README.md#rocket-running-statify-locally)
-- [Features](https://github.com/induviduality/statify/blob/main/README.md#dart-features)
-- [Toolchain](https://github.com/induviduality/statify/blob/main/README.md#%EF%B8%8F-toolchain)
-- [Why Statify](https://github.com/induviduality/statify/blob/main/README.md#star-why-statify--inspiration)
-- [Challenges Faced & Learnings](https://github.com/induviduality/statify/blob/main/README.md#memo-challenges-faced-and-learnings)
-- [What's Next for Statify? [Future Scope]](https://github.com/induviduality/statify/edit/main/README.md#construction-whats-next-for-statify)
-- [Feature Requests & Bug Reporting](https://github.com/induviduality/statify/edit/main/README.md#feature-requests--bug-reporting)
+Documentation available at:
+## [Statify - Complete Documentation](https://induja.gitbook.io/statify)
 
 ## :rocket: Running Statify locally
+Visit: [Running Statify Locally - From the Docs](https://induja.gitbook.io/statify/run-statify-locally/setting-up-the-spotify-web-api)
 
-### Setting up the Spotify Web API
-
--   Head to  [developer.spotify.com](https://developer.spotify.com/).
--   Login with your Spotify account.
--   Once redirected to your Dashboard, Click on 'Create an App'.
--   Register your app by giving it a name and a description in the pop up that appears.
--   Under the field to add `Redirect URIs` add: 
-	 ```
-	 https://induviduality.github.io/local-redirect/
-    ```
-     (Make sure to include the `/` at the end too)
--   In your app dashboard, copy the  `Client ID`  and paste it somewhere safe till we use it in the following steps.
--   Click on  `Show Client Secret`  to reveal your  `Client Secret`  and copy the same.
-
-> ❗  Your Client ID and Client Secret are to be highly confidential. Do not make it public at any cost. 
-
-### Running the app:
-- Clone this repo to your local machine.
-- Ensure that you have the latest version of Flutter installed correctly. Use `flutter pub get` to get any missing dependencies, if needed.
-- Navigate to the `lib` folder in the repo and create a file called `config.dart`. 
-- Paste the following lines into `config.dart` :
-  ```
-  const  String clientID = 'CLIENT_ID';
-  const  String clientSecret = 'CLIENT_SECRET';
-  const  String redirectUri = 'https://induviduality.github.io/local-redirect/';
-  ```
-- Replace `CLIENT_ID` with the `Client ID` and `CLIENT_SECRET` with the `Client Secret` we copied from the dashboard. Note that both the credentials must be enclosed in single quotes.
-- Run the app from the terminal using the command: 
-```flutter run --web-port=8080```
-Choose an available web browser to run on. Chrome is often fastest to run.
 >**Why `--web-port=8080`?**
 > Flutter randomly assigns port numbers at runtime. 
 > 
@@ -61,19 +27,25 @@ Choose an available web browser to run on. Chrome is often fastest to run.
 - Search for Songs
   - Responsive navigation with keyboard as well as mouse for input
 - Generate Song Recommendations based on a song
+- View Recommended tracks individually on Spotify
 - Save Recommendations directly to a new Playlist
 - Clean and simple UI/UX
 
 ## 🛠️ Toolchain
+### The Tech
+<img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" height=40 /> <img src="https://www.vectorlogo.zone/logos/spotify/spotify-icon.svg" height=40 /> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" height=40 /> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Material_Design_Logo.svg/800px-Google_Material_Design_Logo.svg.png?20170303121655" height=40 /> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" height=40 /> <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" height=40 /> <img src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg" height=40 /> 
+
+### The Tools
+<img src="https://iconape.com/wp-content/files/ie/112455/svg/visual-studio-code-1.svg" height=40 /> <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png" height=40 /> <img src="https://www.vectorlogo.zone/logos/gitbook/gitbook-icon.svg" height=40 />
+
 - Flutter
 - Spotify Web API
-- Material UI
-- Firebase
+- Material Design
 - Git
-- Little bit of HTML & JS
-
-### Hosting
-The Web app is hosted on Firebase. Check out the [official documentation on Firebase Hosting](https://firebase.google.com/docs/hosting/quickstart) to host the project.
+- Teeny bits of HTML & JS
+- VSCode
+- GitHub
+- GitBook
 
 ## :star: Why Statify? // Inspiration
 
