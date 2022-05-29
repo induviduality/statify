@@ -79,11 +79,13 @@ Statify caters to exactly that. Statify allows users to look at their Spotify pr
 This part adds a fun element to Statify. It uses sorting algorithms to process the streaming data of the user to provide the statistics.
 
 ## :memo: Challenges Faced and Learnings
-- Being very new to Flutter, it felt daunting to comprehend how Flutter and its widget structure works. Working on this project helped me accelerate my learning curve by a mile.
-- It was a great exercise to deal with an ambiguous problem statement and come up with ideas - gave a feel of what to expect in the industry
-- Learnt a great deal about algorithms - classification and recommendation algorithms in particular. Found myself down a reading spiral as I read up about the math and algorithms during my research about the project.
-- Understood deeply with regards to how user authentication and OAuth2.0 work.
+- Being new to Flutter, it felt daunting to comprehend how Flutter and its widget structure works. Working on this project helped me **accelerate my learning curve** by a mile.
+- It was a great exercise to deal with an ambiguous problem statement and come up with ideas - gave a feel of what to expect in the industry.
+- **Learnt a great deal about algorithms** - classification and recommendation algorithms in particular. Found myself down a reading spiral as I read up about the math and algorithms during my research about the project.
+- Understood deeply with regards to **how user authentication and OAuth2.0 work.**
 - Since support for Web platforms in Flutter is new, I couldn't automate the process of receiving the authorization code after user authentication. It took me a lot of time to figure out what as going wrong and why when I tried to automate it. I eventually found a workaround to complete the authentication manually.
+- There were limitations with the Spotify API in handling users, which I'd discovered late into the project. It **taught me to investigate my choices** thoroughly.
+- I picked up **Test-Driven Development** here. I hope to get better at it and incorporate more rigourous testing in my projects in the future.
 
 > **Flutter Limitations**
 >  Flutter does not have an implementation to listen to link streams on Web platforms yet. Thus, listening to callbacks and retrieving the response can't be automated, unlike websites built with JavaScript.
@@ -93,7 +95,7 @@ This part adds a fun element to Statify. It uses sorting algorithms to process t
 
 ## :construction: What's next for Statify?
 
- - [ ] Add sharing profile as images for external sharing
+ - [ ] Add sharing profile stats as images for external sharing (Half-implemented, just not supported on Web)
  - [ ] Make Website more responsive
  - [ ] Add more timeframes to filter for Top Tracks & Artists
 
