@@ -2,7 +2,9 @@
 A Music Discovery and Spotify Profile Visualizer web app. 
 Built with Flutter and Spotify Web API. :blue_heart::green_heart:
 
-**Check out the live app at: https://stat-ify.web.app**
+**Check out the live app at: https://stat-ify.web.app** 
+
+[Requires Credentials Registered with Spotify API, DM for test account credentials, or run it locally]
 
 #### Documentation available at: **[Statify - Complete Documentation](https://induja.gitbook.io/statify)**
 
