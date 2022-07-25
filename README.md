@@ -10,7 +10,6 @@ Built with Flutter and Spotify Web API. :blue_heart::green_heart:
 
 ## Table of Contents
 - [Running Statify Locally](https://github.com/induviduality/statify/blob/main/README.md#rocket-running-statify-locally)
-- [How does Statify demonstrate the use of algorithms?](https://github.com/induviduality/statify/blob/main/README.md#how-does-my-app-demonstrate-the-use-of-algorithms-in-streaming-apps)
 - [Features](https://github.com/induviduality/statify/blob/main/README.md#dart-features)
 - [Toolchain](https://github.com/induviduality/statify/blob/main/README.md#%EF%B8%8F-toolchain)
 - [Why Statify? - The Inspiration](https://github.com/induviduality/statify/blob/main/README.md#star-why-statify--inspiration)
