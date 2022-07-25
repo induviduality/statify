@@ -4,7 +4,7 @@ Built with Flutter and Spotify Web API. :blue_heart::green_heart:
 
 **Check out the live app at: https://stat-ify.web.app** 
 
-[Requires Credentials Registered with Spotify API, DM for test account credentials, or run it locally]
+[Requires Credentials Registered with Spotify API, DM for test account credentials, or run it locally with your own account!]
 
 #### Documentation available at: **[Statify - Complete Documentation](https://induja.gitbook.io/statify)**
 
@@ -107,7 +107,8 @@ This part adds a fun element to Statify. It uses sorting algorithms to process t
 
  - [ ] Add sharing profile stats as images for external sharing (Half-implemented, just not supported on Web)
  - [ ] Make Website more responsive
- - [ ] Add more timeframes to filter for Top Tracks & Artists
+ - [ ] Add more filtering options (for ex.: more timeframes for Top Tracks & Artists, add playlist options etc.)
+ - [ ] Explore giving user control over their profile (filter options, custom profile link, etc.)
 
 ## Feature Requests & Bug Reporting
 
