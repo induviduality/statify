@@ -8,6 +8,8 @@ Built with Flutter and Spotify Web API. :blue_heart::green_heart:
 
 #### Documentation available at: **[Statify - Complete Documentation](https://induja.gitbook.io/statify)**
 
+#### Demo Video Here: https://youtu.be/hkfCWpIcgyo?t=16
+
 ## Table of Contents
 - [Running Statify Locally](https://github.com/induviduality/statify/blob/main/README.md#rocket-running-statify-locally)
 - [Features](https://github.com/induviduality/statify/blob/main/README.md#dart-features)
